@@ -22,7 +22,7 @@ for (let singleSeat of seat) {
 
     createdSet.innerText = singleSeat.innerText;
     Economoy.innerText = "Economoy";
-    createdPrice.innerText = "500";
+    createdPrice.innerText = "550";
 
     ul.appendChild(createdSet);
     ul.appendChild(Economoy);
@@ -30,7 +30,7 @@ for (let singleSeat of seat) {
     selectedSeat.appendChild(ul);
     count += 1;
     minousCount -= 1;
-    inTotal += 500;
+    inTotal += 550;
 
     document.getElementById("addseat").innerText = count;
     document.getElementById("left").innerText = minousCount;
@@ -49,11 +49,11 @@ document.getElementById("btn-cupon").addEventListener("click", function () {
     // const mainGrand= document.getElementById('grandTotal').innerText=inTotal;
     const mainGrand = inTotal - (inTotal * 20) / 100;
     document.getElementById("grandTotal").innerText = mainGrand;
-    inTotal += 500;
+    inTotal += 550;
   } else if (cupon === "NEW15") {
     const mainGrand = inTotal - (inTotal * 15) / 100;
     document.getElementById("grandTotal").innerText = mainGrand;
-    inTotal += 500;
+    inTotal += 550;
   } else {
     alert("oops invalid cupon");
     return;
